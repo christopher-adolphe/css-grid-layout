@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app-layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  /* background-color: #2d2b55; */
+}
+
+.app-header {
+  background-color: #2a209d;
+}
+
+.app-content {
+  background-color: #ffffff;
+}
+
+.app-main {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  background-color: #f9f9fc;
+  box-shadow: 0 2px 15px 0 rgba(0, 0 ,0 , 0.02);
+}
+
+.app-footer {
+  background-color: #090a28;
+}
+
+.app-container {
+  max-width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  
+}
+
+@media screen and (min-width: 1439px) {
+  .app-container {
+    width: 1380px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
