@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Grid Layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
@@ -12,11 +13,75 @@
       <div class="app-layout">
         <div class="app-header-bg"></div>
 
-        <div class="app-header"></div>
+        <div class="app-header">
+          <a class="app-header__brand" href="/">iGrid</a>
+          
+          <div class="app-header__toolbar-control">
+            <button>B1</button>
+            <button>B2</button>
+          </div>
+
+          <div class="app-header__toolbar">
+            <div class="app-header__toolbar-item">
+              <form class="quick-search" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search..."></div>
+              </form>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i></i>
+              </span>
+            </div>
+          </div>
+        </div>
 
         <div class="app-nav"></div>
 
-        <div class="app-sub-header"></div>
+        <div class="app-sub-header">
+          <div class="app-sub-header__info">
+            <h1>Dashboard</h1>
+          </div>
+
+          <div class="app-sub-header__toolbar">
+            <div class="app-sub-header__toolbar-item">
+              <span class="app-sub-header__toolbar-icon">+</span>
+            </div>
+
+            <div class="app-sub-header__toolbar-item">
+              <span class="app-sub-header__toolbar-icon">+</span>
+            </div>
+
+            <div class="app-sub-header__toolbar-item">
+              <span class="app-sub-header__toolbar-icon">+</span>
+            </div>
+          </div>
+        </div>
 
         <div class="app-content"></div>
 

@@ -1,0 +1,511 @@
+.app-root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 0 1rem; */
+  background-color: rgb(239, 239, 245);
+}
+
+.app-container {
+  width: 1380px;
+  height: 50px;
+}
+
+.app-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(15, 1fr); /*auto*/
+  grid-template-columns: 1fr;
+  /*grid-gap: 1rem;*/
+  grid-template-areas:
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  "."
+  ".";
+}
+
+.app-header-bg {
+  grid-area: 1 / 1 / 3 / -1;
+  background-color: #231da1;
+}
+
+.app-header {
+  grid-area: 1 / 1 / 2 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  min-height: 60px;
+  position: relative;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  /* box-shadow: 0 1px 9px -3px rgba(0, 0, 0, 0.2); */
+}
+
+.app-header__brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5467f7;
+}
+
+.app-header__toolbar-control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app-header__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  /* box-shadow: 0 1px 9px -3px rgba(0, 0, 0, 0.2); */
+  border-top: 1px solid #ebedf2;
+  border-bottom: 1px solid #ebedf2;
+  opacity: 0;
+}
+
+.app-header__toolbar.is-visible {
+  top: 60px;
+  opacity: 1;
+}
+
+.app-header__toolbar-item {
+  margin: 0 0.25rem;
+}
+
+.app-header__toolbar-item:first-child {
+  flex-grow: 1;
+}
+
+.app-header__toolbar-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e7e8f4;
+  border-radius: 100%;
+}
+
+.app-nav {
+  width: 275px;
+  grid-area: 1 / 1 / -1 / -1;
+  background-color: #f7f6f9;
+  display: none;
+}
+
+.app-sub-header {
+  grid-area: 2 / 1 / 3 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #efeff5;
+}
+
+.app-sub-header__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.app-sub-header__info h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.app-sub-header__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.app-sub-header__toolbar-item {
+  margin: 0 0.25rem;
+}
+
+.app-sub-header__toolbar-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(77, 92, 242, 0.1);
+  color: #4d5cf2;
+}
+
+.app-content {
+  grid-area: 3 / 1 / 14 / -1;
+  background-color: #f8f8fb;
+}
+
+.app-content-block-1 {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-2 {
+  grid-area: 4 / 1 / 5 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-3 {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-4 {
+  grid-area: 6 / 1 / 7 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-5 {
+  grid-area: 7 / 1 / 8 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-6 {
+  grid-area: 8 / 1 / 9 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-7 {
+  grid-area: 9 / 1 / 10 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-8 {
+  grid-area: 10 / 1 / 11 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-9 {
+  grid-area: 11 / 1 / 12 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-10 {
+  grid-area: 12 / 1 / 13 / 2;
+  background-color: #ffffff;
+}
+
+.app-content-block-11 {
+  grid-area: 13 / 1 / 14 / 2;
+  background-color: #ffffff;
+}
+
+.app-footer-bg {
+  grid-area: 14 / 1 / -1 / -1;
+  background-color: #6f42c1;
+}
+
+.app-pre-footer {
+  grid-area: 14 / 1 / 15 / -1;
+  background-color: #f7f6f9;
+}
+
+.app-footer {
+  grid-area: 15 / 1 / -1 / -1;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .app-layout {
+    grid-template-rows: repeat(12, 1fr); /*auto*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+  }
+
+  .app-content-block-1 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .app-content-block-2 {
+    grid-area: 3 / 2 / 4 / -1;
+  }
+  
+  .app-content-block-3 {
+    grid-area: 4 / 1 / 5 / -1;
+  }
+  
+  .app-content-block-4 {
+    grid-area: 5 / 1 / 6 / -1;
+  }
+  
+  .app-content-block-5 {
+    grid-area: 6 / 1 / 8 / 2;
+  }
+  
+  .app-content-block-6 {
+    grid-area: 6 / 2 / 7 / -1;
+  }
+  
+  .app-content-block-7 {
+    grid-area: 7 / 2 / 8 / -1;
+  }
+  
+  .app-content-block-8 {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+  
+  .app-content-block-9 {
+    grid-area: 8 / 2 / 9 / -1;
+  }
+  
+  .app-content-block-10 {
+    grid-area: 9 / 1 / 10 / -1;
+  }
+  
+  .app-content-block-11 {
+    grid-area: 10 / 1 / 11 / -1
+    ;
+  }
+
+  .app-content {
+    grid-area: 3 / 1 / 11 / -1;
+  }
+
+  .app-footer-bg {
+    grid-area: 11 / 1 / -1 / -1;
+  }
+  
+  .app-pre-footer {
+    grid-area: 11 / 1 / 12 / -1;
+  }
+  
+  .app-footer {
+    grid-area: 12 / 1 / -1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-layout {
+    grid-template-rows: repeat(13, 1fr); /*auto*/
+    grid-template-columns: 0.25fr 4fr 4fr 0.25fr;
+    grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+  }
+
+  .app-header {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+  
+  .app-nav {
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 4;
+  }
+
+  .app-sub-header {
+    grid-area: 3 / 2 / 4 / 4;
+  }
+
+  .app-content {
+    grid-area: 4 / 2 / 12 / 4;
+  }
+
+  .app-content-block-1 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  
+  .app-content-block-2 {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+
+  .app-content-block-3 {
+    grid-area: 5 / 2 / 6 / 4;
+  }
+
+  .app-content-block-4 {
+    grid-area: 6 / 2 / 7 / 4;
+  }
+
+  .app-content-block-5 {
+    grid-area: 7 / 2 / 9 / 3;
+  }
+
+  .app-content-block-6 {
+    grid-area: 7 / 3 / 8 / 4;
+  }
+
+  .app-content-block-7 {
+    grid-area: 8 / 3 / 9 / 4;
+  }
+
+  .app-content-block-8 {
+    grid-area: 9 / 2 / 10 / 3;
+  }
+
+  .app-content-block-9 {
+    grid-area: 9 / 3 / 10 / 4;
+  }
+
+  .app-content-block-10 {
+    grid-area: 10 / 2 / 11 / 4;
+  }
+
+  .app-content-block-11 {
+    grid-area: 11 / 2 / 12 / 4;
+  }
+
+  .app-footer-bg {
+    grid-area: 12 / 1 / -1 / -1;
+  }
+  
+  .app-pre-footer {
+    grid-area: 12 / 2 / 13 / 4;
+  }
+  
+  .app-footer {
+    grid-area: 13 / 2 / -1 / 4;
+  }
+}
+
+@media (min-width: 1399px) {
+  .app-layout {
+    grid-template-rows: repeat(10, 1fr); /*auto*/
+    grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
+    grid-template-areas:
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";
+    /* padding: 0 1rem; */
+  }
+
+  .app-header {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+  
+  .app-nav {
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 5;
+  }
+
+  .app-sub-header {
+    grid-area: 3 / 2 / 4 / 5;
+  }
+
+  .app-content {
+    grid-area: 4 / 2 / 9 / 5;
+  }
+
+  .app-content-block-1 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  
+  .app-content-block-2 {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+
+  .app-content-block-3 {
+    grid-area: 4 / 4 / 5 / 5;
+  }
+
+  .app-content-block-4 {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+
+  .app-content-block-5 {
+    grid-area: 5 / 3 / 7 / 5;
+  }
+
+  .app-content-block-6 {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+
+  .app-content-block-7 {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+
+  .app-content-block-8 {
+    grid-area: 7 / 3 / 8 / 4;
+  }
+
+  .app-content-block-9 {
+    grid-area: 7 / 4 / 8 / 5;
+  }
+
+  .app-content-block-10 {
+    grid-area: 9 / 2 / 10 / 3;
+  }
+
+  .app-content-block-11 {
+    grid-area: 9 / 3 / 10 / 5;
+  }
+
+  .app-footer-bg {
+    grid-area: 9 / 1 / -1 / -1;
+  }
+  
+  .app-pre-footer {
+    grid-area: 9 / 2 / 10 / 5;
+  }
+  
+  .app-footer {
+    grid-area: 10 / 2 / -1 / 5;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* .app-root {
+    padding: 0;
+  } */
+
+  /*.app-layout {*/
+  /*  width: 1380px;*/
+  /*}*/
+}  
