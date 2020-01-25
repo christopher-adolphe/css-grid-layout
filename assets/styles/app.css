@@ -51,17 +51,6 @@ body {
   ".";
 }
 
-<<<<<<< HEAD
-.app-header {
-  grid-area: 1 / 1 / 2 / 6;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.app-footer {
-  grid-area: 10 / 1 / 11/ 6;
-=======
 .app-header-bg {
   grid-area: 1 / 1 / 3 / 6;
   background: #007bff;
@@ -95,7 +84,6 @@ body {
 .app-footer {
   grid-area: 9 / 2 / 10 / 5;
   background: orange;
->>>>>>> 5898637949be611b9a83088da775e808c4f266b6
 }
 
 @media screen and (min-width: 991px) {
@@ -133,11 +121,7 @@ body {
     ". . . . ."
     ". . . . ."
     ". . . . .";
-<<<<<<< HEAD
-    /* padding: 0 1rem; */
-=======
     padding: 0 1rem;
->>>>>>> 5898637949be611b9a83088da775e808c4f266b6
   }
 }
 
@@ -146,13 +130,7 @@ body {
     padding: 0;
   }
 
-<<<<<<< HEAD
-  /* .app-layout {
-    width: 1380px;
-  } */
-=======
   /*.app-layout {*/
   /*  width: 1380px;*/
   /*}*/
->>>>>>> 5898637949be611b9a83088da775e808c4f266b6
 }
