@@ -1,0 +1,37 @@
+//==============================================================================
+// Fonts
+//==============================================================================
+$root-font-size: 16px;
+$font-family-base: 'Poppins-Regular', sans-serif;
+$font-family-light: 'Poppins-Light', sans-serif;
+$font-family-medium: 'Poppins-Medium', sans-serif;
+$font-family-semi-bold: 'Poppins-SemiBold', sans-serif;
+$font-family-bold: 'Poppins-Bold', sans-serif;
+
+//==============================================================================
+// Breakpoints
+//==============================================================================
+$breakpoint-small: 768px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1399px;
+$breakpoint-x-large: 1439px;
+
+//==============================================================================
+// Colors
+//==============================================================================
+$primary-base: #ffffff;
+$secondary-base: #48465b;
+
+$primary-background: #efeff5;
+$secondary-background: #f9f9fc;
+$tertiary-background: #edeefd;
+
+$primary-color: #4d5cf2;
+$secondary-color: #f93576;
+$tertiary-color: #2c1b9b;
+$quaternary-color: #090a29;
+
+$primary-fade-color: rgba(0, 0, 0, 0.2);
+
+$primary-border-color: #ebedf2;
+$secondary-border-color: #e7e8f4;
