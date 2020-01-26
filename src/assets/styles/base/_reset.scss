@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Reset box sizing to border box
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: $root-font-size;
+  line-height: 1.15;
+}
+
+body {
+  font: 400 1rem/1.5 $font-family-base;
+  text-align: left;
+}
+
+// Remove figure margin
+figure {
+  margin: 0;
+}

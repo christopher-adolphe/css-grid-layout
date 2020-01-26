@@ -1,0 +1,24 @@
+.app {
+  &-footer-bg {
+    grid-area: 14 / 1 / -1 / -1;
+    background-color: $quaternary-color;
+  }
+
+  &-footer {
+    grid-area: 15 / 1 / -1 / -1;
+    
+    @media (min-width: $breakpoint-small) {}
+
+    @media (min-width: $breakpoint-medium) {
+      .app-footer {
+        grid-area: 1 / 2 / 2 / 4;
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      .app-footer {
+        grid-area: 1 / 2 / 2 / 5;
+      }
+    }
+  }
+}
