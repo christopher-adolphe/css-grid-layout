@@ -1,0 +1,19 @@
+.app-nav {
+  width: 275px;
+  grid-area: 1 / 1 / -1 / -1;
+  background-color: $primary-base;
+  display: none;
+
+  @media (min-width: $breakpoint-medium) {
+    & {
+      width: 100%;
+      grid-area: 2 / 2 / 3 / 4;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    & {
+      grid-area: 2 / 2 / 3 / 5;
+    }
+  }
+}

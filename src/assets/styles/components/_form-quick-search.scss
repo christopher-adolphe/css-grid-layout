@@ -1,0 +1,28 @@
+.form-quick-search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .input-group {
+    padding: 0 1rem;
+    border: 1px solid $primary-border-color;
+    border-radius: 2rem;
+  }
+
+  .form-control {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  @media (min-width: $breakpoint-medium + 1) {
+    .input-group {
+      height: 46px;
+      line-height: 44px;
+    }
+
+    .form-control {
+      color: $primary-base;
+    }
+  }
+}

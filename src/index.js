@@ -1,1 +1,12 @@
 import './assets/styles/app.scss';
+import './assets/media/card-author-sales.jpg';
+import './assets/media/card-technologies.jpg';
+import './assets/media/card-total-orders.jpg';
+import './assets/media/card-projects.jpg';
+import './assets/media/card-upcoming-event.jpg';
+import './assets/media/card-recent-orders.jpg';
+import './assets/media/card-order-statistics.jpg';
+import './assets/media/card-notifications.jpg';
+import './assets/media/card-latest-uploads.jpg';
+import './assets/media/card-recent-works.jpg';
+import './assets/media/card-latest-orders.jpg';

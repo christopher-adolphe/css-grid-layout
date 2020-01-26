@@ -1,24 +1,84 @@
-.app {
-  &-footer-bg {
+.app-footer {
+  &-bg {
     grid-area: 14 / 1 / -1 / -1;
     background-color: $quaternary-color;
-  }
 
-  &-footer {
-    grid-area: 15 / 1 / -1 / -1;
-    
-    @media (min-width: $breakpoint-small) {}
-
-    @media (min-width: $breakpoint-medium) {
-      .app-footer {
-        grid-area: 1 / 2 / 2 / 4;
+    @media (min-width: $breakpoint-small) {
+      & {
+        grid-area: 11 / 1 / -1 / -1;
       }
     }
 
-    @media (min-width: $breakpoint-large) {
-      .app-footer {
-        grid-area: 1 / 2 / 2 / 5;
+    @media (min-width: $breakpoint-medium) {
+      & {
+        grid-area: 12 / 1 / -1 / -1;
       }
+    }
+  
+    @media (min-width: $breakpoint-large) {
+      & {
+        grid-area: 10 / 1 / 12 / -1;
+      }
+    }
+  }
+
+  grid-area: 15 / 1 / -1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.8125rem;
+
+    &-item {
+      padding: 0 0.5rem;
+    }
+
+    a {
+      color: $secondary-fade-color;
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    font-size: 0.8125rem;
+    color: $secondary-base;
+  }
+
+  @media (min-width: $breakpoint-small) {
+    & {
+      grid-area: 12 / 1 / -1 / -1;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    & {
+      grid-area: 13 / 2 / -1 / 4;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 0.5rem;
+
+      &__nav {
+        order: 2;
+      }
+
+      &__copyright {
+        order: 1;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    & {
+      grid-area: 11 / 2 / -1 / 5;
     }
   }
 }
