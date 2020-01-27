@@ -1,4 +1,14 @@
 import './assets/styles/app.scss';
+import './assets/fonts/fa-solid-900.eot';
+import './assets/fonts/fa-solid-900.svg';
+import './assets/fonts/fa-solid-900.ttf';
+import './assets/fonts/fa-solid-900.woff';
+import './assets/fonts/fa-solid-900.woff2';
+import './assets/fonts/fa-brands-400.eot';
+import './assets/fonts/fa-brands-400.svg';
+import './assets/fonts/fa-brands-400.ttf';
+import './assets/fonts/fa-brands-400.woff';
+import './assets/fonts/fa-brands-400.woff2';
 import './assets/media/card-author-sales.jpg';
 import './assets/media/card-technologies.jpg';
 import './assets/media/card-total-orders.jpg';
