@@ -100,12 +100,13 @@
     }
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-medium + 1) {
     & {
       grid-area: 12 / 2 / 13 / 4;
       flex-direction: row;
       justify-content: space-between;
       align-items: stretch;
+      margin-top: 50px;
       padding: 0 0.5rem;
 
       &:after {

@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  background-color: $primary-background;
+  padding: 1rem 1rem 0.5rem 1rem;
+  background-color: $secondary-background;
+  box-shadow: 0 2px 15px 0 $tertiary-shadow-color;
 
   &__info {
     display: flex;
@@ -23,7 +24,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0.5rem 0;
 
     &-item {
       margin: 0 0.25rem;
@@ -40,7 +40,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-medium + 1) {
     & {
       grid-area: 3 / 2 / 4 / 4;
     }

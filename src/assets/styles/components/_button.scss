@@ -1,0 +1,29 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-family: $font-family-semi-bold;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  outline: 0;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &-default {
+    color: $secondary-base;
+    border: 1px solid $primary-border-color;
+  }
+
+  &-primary {
+    color: $primary-base;
+    background-color: $primary-color;
+  }
+
+  &-secondary {
+    color: $primary-base;
+    background-color: $secondary-color;
+  }
+}

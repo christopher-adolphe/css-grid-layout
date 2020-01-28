@@ -9,7 +9,7 @@
       }
     }
 
-    @media (min-width: $breakpoint-medium) {
+    @media (min-width: $breakpoint-medium + 1) {
       & {
         grid-area: 12 / 1 / -1 / -1;
       }
@@ -59,7 +59,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-medium + 1) {
     & {
       grid-area: 13 / 2 / -1 / 4;
       flex-direction: row;

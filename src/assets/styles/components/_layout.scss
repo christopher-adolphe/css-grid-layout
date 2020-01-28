@@ -52,7 +52,7 @@
       }
     }
 
-    @media (min-width: $breakpoint-medium) {
+    @media (min-width: $breakpoint-medium + 1) {
       & {
         grid-template-rows: repeat(13, auto);
         grid-template-columns: 0.25fr 4fr 4fr 0.25fr;
