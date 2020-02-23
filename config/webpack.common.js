@@ -54,7 +54,7 @@ module.exports = {
      * Generates an HTML file from a template.
      */
     new HtmlWebpackPlugin({
-      title: 'CSS Grid Layout ',
+      title: 'CSS Grid Layout',
       favicon: paths.src + '/assets/media/favicon.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
