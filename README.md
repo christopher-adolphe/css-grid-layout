@@ -2,7 +2,8 @@
 A responive web page layout based on CSS grid layout.
 
 ## Purpose
-Build a simple responsive web layout to experiment CSS grid layout.
+ - Experiment how CSS grid can be used to create the overall layout of a web page.
+ - Use the features of CSS grid to control the layout at different breakpoints.
 
 ## Author
 Christopher Adolphe
