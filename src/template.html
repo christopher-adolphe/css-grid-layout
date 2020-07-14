@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="app-root">
+      <div class="app-layout">
+        <div class="app-header-bg"></div>
+
+        <div class="app-header">
+          <a class="app-header__brand" href="/">iGrid</a>
+          
+          <div class="app-header__toolbar-control">
+            <button class="btn">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <button class="btn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </div>
+
+          <div class="app-header__toolbar">
+            <div class="app-header__toolbar-item">
+              <form class="form-quick-search" method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search..."></div>
+              </form>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i class="fas fa-layer-group"></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i class="fas fa-th"></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i class="fas fa-bell"></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i class="fas fa-flag"></i>
+              </span>
+            </div>
+            
+            <div class="app-header__toolbar-item">
+              <span class="app-header__toolbar-icon">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-nav">
+          <ul class="app-nav__menu">
+            <li class="app-nav__menu-item">
+              <a class="is-active" href="/">Dashboard</a>
+            </li>
+            <li class="app-nav__menu-item">
+              <a href="/">Menu Item 2</a>
+            </li>
+            <li class="app-nav__menu-item">
+              <a href="/">Menu Item 3</a>
+            </li>
+            <li class="app-nav__menu-item">
+              <a href="/">Menu Item 4</a>
+            </li>
+            <li class="app-nav__menu-item">
+              <a href="/">Menu Item 5</a>
+            </li>
+          </ul>
+
+          <div class="app-nav__toolbar">
+            <button class="btn btn-default">Purchase</button>
+          </div>
+        </div>
+
+        <div class="app-sub-header">
+          <div class="app-sub-header__info">
+            <h1>Dashboard</h1>
+          </div>
+
+          <div class="app-sub-header__toolbar">
+            <div class="app-sub-header__toolbar-item">
+              <span class="app-sub-header__toolbar-icon">
+                <i class="fas fa-file-alt"></i>
+              </span>
+            </div>
+
+            <div class="app-sub-header__toolbar-item">
+              <span class="app-sub-header__toolbar-icon">
+                <i class="fas fa-hourglass-end"></i>
+              </span>
+            </div>
+
+            <div class="app-sub-header__toolbar-item">
+              <span class="app-sub-header__toolbar-icon">
+                <i class="fas fa-plus"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content"></div>
+
+        <div class="app-content-block-1">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Author Sales</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-author-sales.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-2">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Technologies</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-technologies.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-3">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Total Orders</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-total-orders.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-4">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Projects</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-projects.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-5">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Upcoming Event</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-upcoming-event.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-6">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Recent Orders</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-recent-orders.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-7">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Order Statistics</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-order-statistics.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-8">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Notifications</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-notifications.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-9">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Latest Uploads</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-latest-uploads.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-10">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Recent Works</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-recent-works.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-content-block-11">
+          <div class="card">
+            <div class="card__head">
+              <div class="card__head-label">
+                <h3 class="card__head-title">Latest Orders</h3>
+              </div>
+
+              <div class="card__head-toolbar">
+                <button class="btn">
+                  <i class="fas fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="card__body">
+              <img class="img-fluid" src="assets/media/card-latest-orders.jpg"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-footer-bg"></div>
+
+        <div class="app-pre-footer">
+          <div class="app-pre-footer__section">
+            <h3 class="app-pre-footer__section-title">About</h3>
+            <p>We truly hope that our love and dedication to produce an incredibly powerful high level solution suits all your project needs. We will continue to deliver incredible enterprise ready solutions to serve you better.</p>
+          </div>
+          <div class="app-pre-footer__section">
+            <h3 class="app-pre-footer__section-title">Quick Links</h3>
+            <ul class="app-pre-footer__nav">
+              <li class="app-pre-footer__nav-item"><a href="/">Privacy Policy</a></li>
+              <li class="app-pre-footer__nav-item"><a href="/">Terms &amp; Conditions</a></li>
+              <li class="app-pre-footer__nav-item"><a href="/">Help Center</a></li>
+              <li class="app-pre-footer__nav-item"><a href="/">Community</a></li>
+              <li class="app-pre-footer__nav-item"><a href="/">Documentation</a></li>
+              <li class="app-pre-footer__nav-item"><a href="/">Support</a></li>
+            </ul>
+          </div>
+          <div class="app-pre-footer__section">
+            <h3 class="app-pre-footer__section-title">Get in Touch</h3>
+            <form class="form-subscription" action="#">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Subscribe...">
+              </div>
+            </form>
+
+            <div class="app-pre-footer__social">
+              <h4 class="app-pre-footer__social-title">Social Links:</h4>
+
+              <ul class="app-pre-footer__social-nav">
+                <li class="app-pre-footer__social-nav-item">
+                  <a href="/"><i class="fas fa-facebook-f"></i></a>
+                </li>
+                <li class="app-pre-footer__social-nav-item">
+                  <a href="/"><i class="fas fa-twitter"></i></a>
+                </li>
+                <li class="app-pre-footer__social-nav-item">
+                  <a href="/"><i class="fas fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-footer">
+          <ul class="app-footer__nav">
+            <li class="app-footer__nav-item"><a href="/">About</a></li>
+            <li class="app-footer__nav-item"><a href="/">Team</a></li>
+            <li class="app-footer__nav-item"><a href="/">Contact</a></li>
+          </ul>
+          <div class="app-footer__copyright">
+            2020 &copy; iGrid
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.form-subscription {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .input-group {
+    width: 100%;
+    border: 1px solid $secondary-fade-color;
+    border-radius: 4rem;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    font-size: 0.8125rem;
+    color: $secondary-base;
+    background: none;
+    border: none;
+    outline: none;
+  }
+}
